@@ -1,0 +1,17 @@
+.input{
+	font-family: inherit;
+	letter-spacing: inherit;
+	font-size: inherit;
+	color: $default;
+	width: 250px;
+	border: $border-default;
+}
+
+input[type="text"]{
+	@extend .input;
+}
+
+textarea{
+	@extend .input;
+	height: 150px;
+}

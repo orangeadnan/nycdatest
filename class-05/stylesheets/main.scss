@@ -1,0 +1,83 @@
+@import "../bourbon/bourbon";
+
+body {
+	margin: 50px;
+	color: rgb(150, 150, 150);
+	font-family: sans-serif;
+	background: #ccc;
+}
+.fa-apple {
+	text-align: center;
+	box-shadow: 0px 0px 15px #999;
+
+}
+.box {
+	width: 100px;
+	height: 100px;
+	background: #333333;
+	margin: 50px;
+	padding: 50px;
+	color: white;
+	border-radius: 50%;
+	border: 10px solid white;
+	cursor: pointer;
+	animation: followPath 2s;
+	-webkit-animation: followPath 2s 1 linear;
+	background: #000000; /* Old browsers */
+background: -moz-linear-gradient(top,  #000000 0%, #595959 40%, #1c1c1c 93%, #131313 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(40%,#595959), color-stop(93%,#1c1c1c), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #000000 0%,#595959 40%,#1c1c1c 93%,#131313 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #000000 0%,#595959 40%,#1c1c1c 93%,#131313 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #000000 0%,#595959 40%,#1c1c1c 93%,#131313 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #000000 0%,#595959 40%,#1c1c1c 93%,#131313 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+
+}
+
+@-webkit-keyframes followPath {
+	0% {margin-left: 0px; margin-top: 0px;}
+	// 25% {margin-left: 50px; margin-top: 50px;}
+	// 50% {margin-left: 50px; margin-top: 150px;}
+	100% {margin-left: 200px; margin-top: 200px;}
+}
+
+@keyframes followPath {
+	0% {margin-left: 0px; margin-top: 0px;}
+	25% {margin-left: 50px; margin-top: 50px;}
+	50% {margin-left: 50px; margin-top: 150px;}
+	100% {margin-left: 200px; margin-top: 200px;}
+}
+
+.box:hover {
+	background: #cc3333;
+	zoom: 110%;
+	text-align: center;
+}
+
+// .box:hover {
+// 	width: 200px;
+// 	background: rgba(150, 50, 50, 0.3);
+// 	width: 800px;
+// 	border-radius: 10px;
+// 	-webkit-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+//   	transition:         all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+// }
+// 	transition: 2s;
+// }
+
+// .box {
+// 	width: 200px;
+// 	height: 200px;
+// 	background: rgb(40, 40, 200);
+// 	// transform: translate(215px, 200px) rotate(-35deg);
+// 	//transform: skew(40deg)
+// 	transform: rotateX(20deg);
+// 	box-shadow: 15px 15px 15px #888888;
+// }
+
+// .header-animation {
+// 	@include transform(rotate(-35deg));
+// }
+
+
+

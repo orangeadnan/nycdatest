@@ -1,0 +1,16 @@
+body {
+  background: #ffd27f; }
+
+.btn-primary, .btn-secondary {
+  background: #f8f8f8;
+  border: 1px solid #333;
+  padding: .5rem 1rem;
+  cursor: pointer; }
+
+.btn-primary {
+  background: #cc3333; }
+
+.btn-secondary {
+  background: #f7cb00; }
+
+/*# sourceMappingURL=stylesheet.css.map */

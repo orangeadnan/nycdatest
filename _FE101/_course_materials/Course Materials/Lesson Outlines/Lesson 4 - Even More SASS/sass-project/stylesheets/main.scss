@@ -1,0 +1,167 @@
+// // //@import 'bourbon/bourbon';
+
+@import '../bower_components/bourbon/dist/bourbon';
+
+.box {
+	width: 40px;
+	height: 40px;
+	background-color: blue;
+
+	// transform: translate(25px, 50px) scale(4, 2);
+	// -webkit-transform: translate(25px, 50px) scale(4, 2);
+
+	transition: width 10s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 5s 1s;
+}
+
+.box:hover {
+	width: 300px;
+	background-color: orange;
+}
+
+// // $theme: "pink";
+
+
+
+// // $default-color: purple;
+
+// // html {
+// // 	height: 100%;
+	
+// // }
+
+// // body {
+// // 	//@include linear-gradient(90deg, #1e5799, tint($default-color, 10%));
+// // 	//background-color: tint($default-color, 30%);
+
+// // 	@if $theme == "pink"
+// // 	{
+// // 		background-color: pink;
+// // 	}
+// // 	@else if $theme == "blue"
+// // 	{
+// // 		background-color: blue;
+// // 	}
+
+// // }
+
+
+// // @for $i from 1 through 100 {
+// // 	.cell-#{$i} {
+// // 		width: 1% * $i;
+// // 	}
+// // }
+
+// @for $i from 1 through 12 {
+// 	.col-xs-#{$i} {
+// 		width: 100/$i + "%";
+// 	}
+// }
+
+// @media all and (min-width: 768px) {
+// 	@for $i from 1 through 12 {
+// 		.col-sm-#{$i} {
+// 			width: 100/$i + "%";
+// 		}
+// 	}
+// }
+
+// @media all and (min-width: 992px) {
+// 	@for $i from 1 through 12 {
+// 		.col-md-#{$i} {
+// 			width: 100/$i + "%";
+// 		}
+// 	}
+// }
+
+// @media all and (min-width: 1200px) {
+// 	@for $i from 1 through 12 {
+// 		.col-lg-#{$i} {
+// 			width: 100/$i + "%";
+// 		}
+// 	}
+// }
+
+// .font-12 {
+// 	font-size: 12px;
+// }
+
+// .font-24 {
+// 	font-size: 24px;
+// }
+
+// .font-36 {
+// 	font-size: 36px;
+// }
+
+// @for $i from 1 to 6 {
+// 	.font-#{$i*12} {
+// 		font-size: $i*12px;
+// 	}
+// }
+
+// @each $person in zach, ray, sally {
+// 	.#{$person}-icon {
+// 		background-image: url('/images/#{$person}.png');
+// 	}
+// }
+
+// @each $list-style-type in disc, circle, decimal {
+// 	.list-style-#{$list-style-type} {
+// 		list-style-type: $list-style-type;
+// 	}
+// }
+
+// .alert {
+// 	background-color: yellow;
+// }
+
+// .warning {
+// 	@extend .alert;
+// 	font-size: 36px;
+// }
+
+
+// %thick-line {
+// 	border: 10px solid black;
+// }
+
+// .profile {
+// 	@extend %thick-line;
+// }
+
+// %button {
+// 	border: 1px solid black;
+// 	border-radius: 4px;
+// 	background-color: green;
+// 	width: 100px;
+// 	padding: 40px;
+// }
+
+// .button-style-one {
+// 	@extend %button;
+// 	background-color: yellow;
+// }
+
+// .button-style-two {
+// 	@extend %button;
+// 	background-color: red;
+// }
+
+
+// .button-style-three {
+// 	@extend %button;
+// 	background-color: yellow;
+// }
+
+
+// .container {
+
+// 	@if $theme == "pink"
+// 	{
+// 		background-color: shade(pink, 50%);
+// 	}
+
+// 	// background-color: shade($default-color, 30%);
+
+// 	// color: tint($default-color, 10%);
+// }

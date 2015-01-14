@@ -1,0 +1,11 @@
+#box {
+   width: 100%;
+   padding-bottom: 25%;
+   border: 5px solid $color-two;
+   background: $color-four;
+}
+.inner-contents {
+   padding: 15px;
+   text-align: center;
+   font-size: $font-size-one;
+}

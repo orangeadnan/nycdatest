@@ -1,0 +1,13 @@
+a:link{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $default;
+}
+
+a:visited{
+	color: $default;
+}
+
+a:hover{
+	text-decoration: line-through;
+}

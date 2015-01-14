@@ -1,0 +1,16 @@
+.notice{
+	text-transform: uppercase;
+	font-size: 1.3em;
+	font-weight: $normal;
+	color: $color-four;
+	padding: 5px 0;
+}
+
+.alert{
+	@extend .notice;
+	color: $color-five;
+}
+
+.notice-icon{
+	width: 24px;	
+}

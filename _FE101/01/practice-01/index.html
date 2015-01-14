@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>FE 01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body {
+			background-image: url(bg-02.jpg);
+		}
+		.box {
+			background-image: url(shiba-200px.jpg);
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+            border: 10px solid #333;
+		}
+        
+/*        @media (min-width: 400px) and (max-width: 960px) {*/
+        @media (min-width: 960px) {
+			body {
+				background-image: url(bg-01.png);
+                
+			}
+            .box {
+                background-image: url(shiba-400px.jpg);
+                width: 400px;
+                height: 400px;
+                margin: 10px;
+                display: inline-block;
+            }
+		}
+        
+
+        @media (min-width: 400px) and (max-width: 960px) {
+			body {
+				background-image: url(bg-03.jpg);
+                
+			}
+            .box {
+                display: inline-block;
+                border: 0;
+            }
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+$feature-color: black;
+
+@include keyframes(wobble) {
+	from {
+		@include transform(rotate(-5deg));
+	}
+	to {
+		@include transform(rotate(5deg));
+	}
+}
+
+@-webkit-keyframes wobble {
+	from {
+		-webkit-transform: rotate(-5deg);
+	}
+	to {
+		-webkit-transform: rotate(5deg);
+	}
+}
+
+.creature {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+
+	background-color: pink;
+
+	position: relative;
+
+	@include animation (wobble 2s alternate infinite);
+}
+
+.shadow {
+	width: 200px;
+	height: 200px;
+	background-color: rgba(0,0,0,.4);
+	border-radius: 50%;
+	@include transform(rotateX(70deg) skewX(60deg));
+}
+
+.eye {
+	background-color: $feature-color;
+	width: 20px;
+	height: 40px;
+
+	top: 75px;
+
+	border-radius: 50%;
+
+	position: absolute;
+}
+
+.eye:nth-of-type(1) {
+	left: 80px;
+}
+
+.eye:nth-of-type(2) {
+	left: 180px;
+}
+
+.mouth {
+	background-color: $feature-color;
+}
+
+
+

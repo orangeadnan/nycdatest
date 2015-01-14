@@ -1,0 +1,27 @@
+//FONT-WEIGHT
+
+$light: 300;
+$normal: 400;
+$bold: 700;
+
+.light{
+	font-weight: $light;
+}
+
+.normal{
+	font-weight: $normal;
+}
+
+.bold{
+	font-weight: $bold;
+}
+
+//FONT-SIZE
+
+$font-size: 13px;
+
+@for $i from 1 through 6{
+	.font-size-#{$i*12} {
+		font-size: $i*12px;
+	}
+}

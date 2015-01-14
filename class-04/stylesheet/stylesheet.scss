@@ -1,0 +1,43 @@
+@import 'bourbon/bourbon';
+
+
+body {
+	background: tint(orange, 50%);
+}
+
+// $fs: 1;
+
+// @for $fs from 1 through 6 {
+// .fs-#{$fs} { font-size: $fs * 12px }
+// }
+
+// @for $number from 1 through 6 {
+// 	.fs-#{$number} { font-size: 12px * $number }
+// }
+
+// $liststyle-one: disc; 
+// $liststyle-two: square;
+// $liststyle-three: circle;  
+
+// @each $liststyle in $liststyle-one, $liststyle-two, $liststyle-three {
+// .list-style-#{$liststyle} {
+// 	list-style: #{$liststyle} outside none;
+// }
+// }
+
+%button {
+	background: #f8f8f8;
+	border: 1px solid #333;
+	padding: .5rem 1rem;
+	cursor:pointer;
+}
+
+.btn-primary {
+	@extend %button;
+	background: #cc3333;
+}
+
+.btn-secondary {
+	@extend %button;
+	background: #f7cb00;
+}

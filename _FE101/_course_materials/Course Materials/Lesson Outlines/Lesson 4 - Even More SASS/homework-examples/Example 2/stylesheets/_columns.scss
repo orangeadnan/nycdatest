@@ -1,0 +1,9 @@
+@for $i from 1 through 12{
+	.col-#{$i}{
+		width: (100/$i) * 1%;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0 15px;
+		display: inline-block;
+	}
+}

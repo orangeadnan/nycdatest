@@ -1,0 +1,35 @@
+button{
+	background-color: #fff;
+	font-family: inherit;
+	letter-spacing: inherit;
+	font-size: .9em;
+	text-transform: uppercase;
+	color: $default;
+	border: $border-default;
+}
+
+button:hover{
+	cursor: pointer;
+	background-color: rgba(235, 205, 204, .1);
+}
+
+button:active{
+	background-color: rgba(235, 205, 204, .1);
+}
+
+.button-two:hover{
+	@extend button;
+	background-color: $default;
+	color: #fff;
+}
+
+.link-button{
+	@extend button;
+	border: 1px solid $color-three;
+	color: $color-three;
+}
+
+.link-button:hover{
+	background-color: $color-three;
+	color: #fff;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>test</div>
+	<script>
+		document.write("hello<br>");
+		document.write("hello2<br>");
+
+		for(var i=0; i < 7; i++)
+		{
+			document.write("<img src='images/apollo_state_"+i+".png'><br>");
+		}
+
+		var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+
+		for(var i = 0; i < colors.length; i++)
+		{
+			document.write("<div style='background-color:"+colors[i]+"; width: 100px; height: 100px;'></div>");
+		}		
+
+
+	</script>
+	<!-- <script type="text/javascript" src="js/main.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,88 @@
+@import "colors";
+@import "fonts";
+@import "button";
+@import "forms";
+@import "misc";
+@import "structure";
+
+body {
+	font-family: $base-font-family;
+	color: $color-one;
+}
+#container {
+	width: 800px;
+	margin: 40px auto;
+	background: #fff;
+}
+h1 {
+	font-size: $headline-one-size;
+	font-family: $color-one;
+	font-weight: 300;
+	color: $color-five;
+	margin-top: 60px;
+	border-bottom: 1px dotted $color-five;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+  &:hover { 
+  	text-decoration: underline; 
+  	color: $color-one;
+  }
+  body.firefox & { 
+  	font-weight: normal; 
+  }
+}
+#top-container {
+	background: $color-three;
+	padding: 20px;
+	li {
+		list-style: none;
+		line-height: 2rem;
+		border-bottom: 1px dotted #fff;
+		font-weight: 300;
+		font-size: $font-size-two;
+	}
+}
+.font-size-one {
+	font-size: $font-size-one;
+	font-weight: 300;
+	color: $color-two;
+}
+
+.colorbox {
+	width: 136px / 800px * 100%;
+	height: 150px;
+	display: inline-block;
+	padding: 10px;
+}
+#colorbox-one {
+	@extend .colorbox;
+	background: $color-five;
+} 
+#colorbox-two {
+	@extend .colorbox;
+	background: $color-three;
+}
+#colorbox-three {
+	@extend .colorbox;
+	background: $color-four;
+} 
+#colorbox-four {
+	@extend .colorbox;
+	background: $color-two;
+} 
+#colorbox-five {
+	@extend .colorbox;
+	background: $color-six;
+} 
+.fa, .icons-group {
+	color: $color-two;
+	padding-right: 20px;
+}
+.fa, .social-icons {
+	color: $color-one;
+	padding-right: 10px;
+} 

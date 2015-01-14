@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class workd 2.2</title>
+	<style type="text/css">
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		#container {
+			max-width: 1200px;
+			background: #f8f8f8;
+			margin: 0 auto;
+		}
+		.box {
+			display: block;
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+			float: left;
+		}
+		.color-one {
+			background: #ccc;
+		}
+		.color-two {
+			background: #f8f8f8;
+		}
+		.color-three {
+			background: #333;
+		}
+		.color-four {
+			background: #999;
+		}
+		@media all and (max-width: 1199px) {
+			.box {
+				display: block;
+				clear: both;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>
+			Headline one goes here
+		</h1>
+		<div class="rwo">
+			<div class="col-md-6">
+				<form>
+					<div class="form-group">
+						<label for="inputEmail">Email</label>
+						<input type="email" class="form-control" id="EmailID" placeholder="Email address"> 
+					</div>
+					<div class="form-group">
+				        <label for="inputPassword">Password</label>
+				        <input type="password" class="form-control" id="inputPassword" placeholder="*******">
+		    		</div>
+				    <div class="checkbox">
+				        <label><input type="checkbox"> Remember me</label>
+				    </div>
+				    <button type="submit" class="btn btn-primary">Login</button>
+				</form>
+			</div>
+		</div>
+		<div>
+			<div class="box color-one"></div>
+			<div class="box color-two"></div>
+			<div class="box color-three "></div>
+			<div class="box color-four	"></div>
+			<div class="box color-two"></div>
+			<div class="box color-three "></div>
+		</div>
+		<div>
+			<div class="box color-four"></div>
+			<div class="box color-one"></div>
+			<div class="box color-two"></div>
+			<div class="box color-one"></div>
+			<div class="box color-four"></div>
+			<div class="box color-two"></div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ACME Corporation</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			color: #666;
+			width: 778px;
+			margin: 30px auto 0;
+		}
+		h2 {
+			font-size: 30;
+			font-weight: normal;
+		}
+		img {
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+		nav, nav a, nav a:hover, nav a:active {
+			font-size: 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #a19c96;	
+			text-decoration: none;
+			margin-top: -33px;
+			padding-left: 30px;
+		}
+		#float-right {
+			float: right;
+		}
+		#main-image {
+			margin-top: 50px;
+		}
+		#bodycopy-one {
+			width: 48%;
+			float: left;
+		}
+		#bodycopy-two {
+			width: 48%;
+			float: right;
+		}
+		@media (min-width: 320px) and (max-width: 777px) {
+			body {
+				width: 94%;
+			}
+			nav, nav a, nav a:hover, nav a:active {
+				float: left;
+				display: block;
+				padding: 5px;
+				width: 100%;
+				margin-top: 2px;
+			}
+			#bodycopy-one {
+				display: block;
+				width: 100%;
+			}
+			#bodycopy-two {
+				display: block;
+				width: 100%;
+			}
+			#main-image {
+				display: none;
+			}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="images/acme-logo-01.png" height="" width="" alt="ACME Corporation">
+	</header>
+	<nav id="float-right">
+		<a href="#home">Home</a>
+		<a href="#aboutus">About us</a>
+		<a href="#contact">Contact</a>
+	</nav>
+	<section id="main-image">
+		<img src="images/main-image.png" width="778" height="324" alt="Image tile">
+	</section>
+	<section>
+		<div id="bodycopy-one">
+			<h2>why acme?</h2>
+			<p>
+				Acme products have been known for centuries to be defective, amazing, and exported.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar gravida imperdiet. Nunc faucibus, erat in cursus scelerisque, arcu justo mollis nisi, et sollicitudin risus elit a elit. Nunc nec nisl consequat enim facilisis pharetra bibendum vel massa. Suspendisse potenti. Quisque mollis at arcu id sodales. Phasellus eget lacinia odio, at sagittis dui. Vestibulum consectetur eros
+			</p>
+		</div>
+		<div id="bodycopy-two">
+			<h2>anvils are not working</h2>
+			<p>
+				Acme products have been known for centuries to be defective, amazing, and exported.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar gravida imperdiet. Nunc faucibus, erat in cursus scelerisque, arcu justo mollis nisi, et sollicitudin risus elit a elit. Nunc nec nisl consequat enim facilisis pharetra bibendum vel massa. Suspendisse potenti. Quisque mollis at arcu id sodales. Phasellus eget lacinia odio, at sagittis dui. Vestibulum consectetur eros purus, non semper diam mattis id. Duis gravida viverra lectus eget consequat. Aliquam pulvinar ipsum elit, 
+			</p>
+		</div>
+	</section>
+	<footer>
+	</footer>
+</body>
+</html>

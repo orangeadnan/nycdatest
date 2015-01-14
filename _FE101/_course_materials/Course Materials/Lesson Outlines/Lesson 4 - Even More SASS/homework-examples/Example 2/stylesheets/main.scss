@@ -1,0 +1,32 @@
+@import "bourbon/bourbon";
+@import "colors";
+
+$border-default: 1px solid $default;
+
+@import "fonts";
+@import "headings";
+@import "lists";
+@import "links";
+@import "buttons";
+@import "forms";
+@import "images";
+@import "search";
+@import "social";
+@import "notices";
+@import "columns";
+
+body{
+	font-family: "Quicksand", sans-serif;
+	font-size: $font-size;
+	color: $default;
+	letter-spacing: .1em;
+}
+
+#container{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.content-block{
+	margin: 40px 0;
+}

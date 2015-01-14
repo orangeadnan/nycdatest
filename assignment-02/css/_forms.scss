@@ -1,0 +1,21 @@
+form {
+	ol {
+		list-style: none;
+		-webkit-padding-start: 0;
+	}
+	label {
+		display: block;
+		line-height: 2rem;
+	}
+	input, 
+	textarea {
+		padding: 10px;
+		border: 1px solid #999999;
+		width: 300px;
+	}
+	input:focus, 
+	textarea:focus {
+		border: 1px solid $color-two;
+		background: $color-three;
+	}
+}

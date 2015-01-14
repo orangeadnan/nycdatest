@@ -1,0 +1,214 @@
+@import 'bourbon/bourbon';
+
+/* Color palette ----------------------------------*/
+
+$dark-gray: #50595f;
+$medium-gray: #d9e3ea;
+$light-gray: #f5f8fa;
+$purple: #7d13c8;
+$blue: #3eb4ff;
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px 40px;
+	font-family: Lato;
+	font-size: 12px;
+	color: $dark-gray;
+	line-height: 160%;
+
+}
+
+.horiz-spacer{
+	width: auto;
+	height: 40px;
+	display: block;
+}
+
+/* Style Guide Headers ----------------------------------*/
+
+%heading{
+	color: $dark-gray;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.heading-large{
+	@extend %heading;
+	font-size: 16px;
+}
+
+.heading-small{
+	@extend %heading;
+	line-height: 220%;
+}
+
+.heading-bar{
+	width: auto;
+	height: 2px;
+	background-color: $light-gray;
+	margin-top: 14px;
+	display: block;
+}
+
+/* Auto-generate font sizes ----------------------------------*/
+
+%font-lato-light{
+	font-weight: 100;
+	color: $dark-gray;
+	letter-spacing: -.5px;
+	line-height: 120%;
+}
+
+@for $i from 1 through 6 {
+	.font-lato-light-#{$i*10}{
+		font-size: $i*10px;
+		@extend %font-lato-light;
+	}
+}
+
+%font-merriweather{
+	font-family: merriweather;
+	color: $dark-gray;
+	line-height: 180%;
+}
+
+@for $i from 1 through 4 {
+	.font-merriweather-#{$i*4}{
+		font-size: $i*4px;
+		@extend %font-merriweather;
+	}
+}
+
+/* Color swatches ----------------------------------*/
+
+%color-swatch {
+	width: auto;
+	height: 150px;
+}
+
+.color-swatch-dark-gray{
+	@extend %color-swatch;
+	background-color: $dark-gray;
+}
+
+.color-swatch-medium-gray{
+	@extend %color-swatch;
+	background-color: $medium-gray;
+}
+
+.color-swatch-light-gray{
+	@extend %color-swatch;
+	background-color: $light-gray;
+}
+
+.color-swatch-purple{
+	@extend %color-swatch;
+	background-color: $purple;
+}
+
+.color-swatch-blue{
+	@extend %color-swatch;
+	background-color: $blue;
+}
+
+/* Buttons ----------------------------------*/
+
+button {
+  @include button;   /* This is a bourbon shortcut */
+  /* custom button styles */
+  border-radius: 0px;
+  background-color: $blue;
+  text-transform: uppercase;
+  background-image: none;
+  padding: 15px 35px;
+  font-size: 18px;
+  border: 1px solid #009eef;
+  letter-spacing: 1px;
+  text-shadow: none;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.button-secondary{
+	@extend button;
+	background-color: $medium-gray;
+	color: #7e8f9a;
+	border: 1px solid #c8d2d8;
+	text-shadow: none;
+  	box-shadow: inset 0 1px 0 0 $light-gray;	
+}
+
+/* Inputs ----------------------------------*/
+
+#{$all-text-inputs} {
+  border: 1px solid green;
+}
+
+#{$all-text-inputs-hover} { // Target the :hover pseudo-class
+  background: yellow;
+}
+
+#{$all-text-inputs-focus} { // Target the :focus pseudo-class
+  background: white;
+}
+
+/* Callouts ----------------------------------*/
+
+@mixin callout-box($width) {
+	width: $width;
+	height: auto;
+	display: block;
+	padding: 40px 20px;
+	margin-bottom: 20px;
+}
+
+.callout-box-primary {
+	@include callout-box(auto);
+	background-color: $light-gray;
+}
+
+.callout-box-secondary {
+	@include callout-box(auto);
+	border: 1px solid $medium-gray;
+}
+
+.callout-box-rule{
+	width: auto;
+	height: 4px;
+	background-color: $purple;
+	top: 0px;
+}
+
+/* Alerts ----------------------------------*/
+
+%alert-format{
+	padding: 20px 15px;
+	color: #ffffff;
+	font-weight: bold;
+	width: auto;
+  	height: auto;
+
+}
+
+@mixin alert-size($alert-color) {
+  background-color: $alert-color;
+  @extend %alert-format;
+}
+
+.alert-positive{
+	@include alert-size(#14bd64);
+}
+
+.alert-info{
+	@include alert-size($dark-gray);
+}
+
+.alert-caution{
+	@include alert-size(#ff8a00);
+}
+
+.alert-error{
+	@include alert-size(#e52f48);
+}
+

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#slider img {
+			width: 400px;
+			height: 300px;
+
+			position: absolute;
+		}
+
+		#slider li {
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="slider">
+		<ul>
+			<li><img src="http://hdwallpaper.freehdw.com/0008/animals_widewallpaper_cat_74664.jpg" alt=""></li>
+			<li><img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" alt=""></li>
+			<li><img src="http://www.cliplip.com/wp-content/uploads/2014/05/Cat-Photography.jpg" alt=""></li>
+			<li><img src="http://exmoorpet.com/wp-content/uploads/2012/08/cat.png" alt=""></li>
+		</ul>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var currentImageIndex = 0;
+			$("#slider img").not(":first").hide();
+
+			// When I click on a cat
+			$("#slider").on('click', function() {
+				// hide the current cat
+				$("#slider img").eq(currentImageIndex).fadeOut();
+
+				// update the slide number
+				/*currentImageIndex++;
+				if(currentImageIndex >= $("#slider img").length) {
+					currentImageIndex = 0;
+				}*/
+				currentImageIndex = (currentImageIndex + 1) % $("#slider img").length;
+
+				// show the new cat
+				$("#slider img").eq(currentImageIndex).fadeIn();
+			});
+		});
+	</script>
+</body>
+</html>

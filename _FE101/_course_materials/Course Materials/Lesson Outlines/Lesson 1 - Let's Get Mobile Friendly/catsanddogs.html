@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.image {
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			background-size: cover;
+			border: 1px solid black;
+			background-image: url('http://www.jeremynoeljohnson.com/wp-content/uploads/2014/06/crazy_cat_3.jpg');
+
+			display: inline-block;
+		}
+
+		#cat { 
+			background-image: url('http://www.jeremynoeljohnson.com/wp-content/uploads/2014/06/crazy_cat_3.jpg');
+		}		
+
+		#dog {
+			background-image: url('http://viralstash.net/wp-content/uploads/2014/03/521013543_1385596410.jpg');	
+		}
+
+		@media all and (max-width: 400px) {
+			.image{
+				border: 0px;
+				width: 400px;
+				height: 400px;
+				background-image: url('http://viralstash.net/wp-content/uploads/2014/03/521013543_1385596410.jpg');			}
+		}
+
+	</style>
+</head>
+<body>
+	<div id="cat" class="image"></div>
+	<div id="dog" class="image"></div>
+	<div class="image"></div>
+	<div class="image"></div>
+	<div class="image"></div>
+	<div class="image"></div>
+	<div class="image"></div>
+	<div class="image"></div>
+	<div class="image"></div>
+</body>
+</html>

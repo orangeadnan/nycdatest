@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		body {
+			color: grey;
+			font-family: Arial, sans-serif;
+		}
+
+		#anvil {
+			display: none;
+		}
+
+		nav li {
+			list-style: none;
+			font-size: 30px;
+			text-transform: uppercase;
+		}
+
+		@media all and (min-width: 768px) {
+			nav {
+				float: right;
+			}
+
+			nav li {
+				display: inline-block;
+				margin: 0 30px;
+				vertical-align: top;
+			}
+
+			#anvil {
+				display: block;
+
+				margin: 0 auto;
+			}
+
+			#content {
+				width: 960px;
+				margin: 0 auto;
+			}
+
+			.content-block {
+				width: 48%;
+				display: inline-block;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div id="content">
+			<img src="acme-logo.png">
+
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>About Us</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+
+		<img id="anvil" src="anvil.png">
+
+		<div class="content-block">
+		<h1>why acme?</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio doloribus cum odio, rerum porro facere quod aperiam eum tenetur libero veniam nam, consequatur voluptatem obcaecati dolorum earum. Quidem, cumque, nesciunt.
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quasi mollitia optio ullam, officiis eveniet rerum! Culpa officia nesciunt quis quos placeat pariatur nostrum rem facilis, velit, totam ex.</div>
+		<div class="content-block">
+		<h1>anvils are not working</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio doloribus cum odio, rerum porro facere quod aperiam eum tenetur libero veniam nam, consequatur voluptatem obcaecati dolorum earum. Quidem, cumque, nesciunt.
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quasi mollitia optio ullam, officiis eveniet rerum! Culpa officia nesciunt quis quos placeat pariatur nostrum rem facilis, velit, totam ex.
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* This is a CSS comment*/
+// This is a SASS comment
+
+nav {
+	background: $color3;
+	
+	ul {
+		list-style-type: none;
+	}	
+
+	a {
+		color: $color2;
+		text-decoration: none;
+	
+		&:hover {
+			color: $color3;
+		}
+
+		&.special {
+			color: red;	
+		}
+	}
+}
+
+@media all and (min-width: 768px) {
+	nav {
+		li {
+			display: inline-block;
+			margin: 10px;
+		}
+	}
+}

@@ -1,0 +1,105 @@
+$vertical-width: 336px;
+$vertical-height: 408px;
+$horizontal-width: 420px;
+$horizontal-height: 324px;
+
+.background-div{
+	margin: 10px 20px;
+	display: inline-block;
+	vertical-align: bottom;
+	position: relative;
+}
+
+.background-vertical-div{
+	@extend .background-div;
+	width: $vertical-width;
+	height: $vertical-height;
+}
+
+.background-horizontal-div{
+	@extend .background-div;
+	width: $horizontal-width;
+	height: $horizontal-height;
+}
+
+.image-div{
+	background-color: #fff;
+	border: 1px solid $default;
+	box-shadow: 3px 3px 3px #e1e1e1;
+}
+
+.vertical-image-div{
+	@extend .image-div;
+	width: $vertical-width;
+	height: $vertical-height;
+}
+
+.horizontal-image-div{
+	@extend .image-div;
+	width: $horizontal-width;
+	height: $horizontal-height;
+}
+
+.image-vertical{
+	position: relative;
+	width: 288px;
+	height: 300px;
+	top: 24px;
+	left: 24px;
+}
+
+.image-horizontal{
+	position: relative;
+	width: 372px;
+	height: 234px;
+	top: 30px;
+	left: 24px;
+}
+
+.promotion-div-text{
+	text-align: center;
+	position: absolute;
+	top: 0;
+	z-index: 90;
+	display: none;
+	box-sizing: border-box;
+	color: $color-three;
+}
+
+.promotion-vertical{
+	@extend .promotion-div-text;
+	width: $vertical-width;
+	height: $vertical-height;
+	padding: 100px 30px;
+}
+
+.promotion-horizontal{
+	@extend .promotion-div-text;
+	width: $horizontal-width;
+	height: $horizontal-height;
+	padding: 80px 50px;
+}
+
+.background-div-hover{
+	cursor: pointer;
+
+	.promotion-div{
+		opacity: .2;
+	}
+}
+
+.background-vertical-div:hover{
+	@extend .background-div-hover;
+
+	.promotion-vertical{
+		display: inline-block;
+	}
+}
+
+.background-horizontal-div:hover{
+	@extend .background-div-hover;
+
+	.promotion-horizontal{
+		display: inline-block;
+	}
+}

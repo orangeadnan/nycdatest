@@ -1,0 +1,9 @@
+.box {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  transition: width 10s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 5s 1s; }
+
+.box:hover {
+  width: 300px;
+  background-color: orange; }

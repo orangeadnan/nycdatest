@@ -1,0 +1,68 @@
+@import 'colors';
+@import 'nav';
+
+body {
+	background: $default-blue;
+}
+
+.test {
+	background: white;
+	color: $color2;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin black($opacity) {
+	background-color: rgba(0, 0, 0, $opacity);
+}
+
+@mixin white($opacity) {
+	background-color: rgba(255, 255, 255, $opacity);
+}
+
+$unit: 40px;
+.square {
+
+	width: $unit;
+	height: $unit;
+	//background: $color2;
+	margin: $unit/4;
+
+	//@include border-radius(50%);
+	@include black(.3);
+}
+
+.bigsquare {
+	width: 2*$unit;
+	height: 2*$unit;
+	margin: $unit/4;
+	background: $color3;
+
+	@include border-radius(10px);
+	@include white(.3);
+}
+
+@media all and (min-width: 768px) {
+	.square, .bigsquare {
+		display: inline-block;
+	}
+}
+
+.button {
+	@include border-radius(10px);
+	border: 1px solid black;
+	padding: 3px;	
+	background-color: red;
+}
+
+.special-button {
+	@extend .button;
+
+	background-color: yellow;
+}

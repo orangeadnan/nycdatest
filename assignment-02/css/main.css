@@ -1,0 +1,155 @@
+/* blue */
+/* light yellow-blue */
+/* light blue */
+/* orange */
+/* dark blue */
+.button-default {
+  background-color: #ECF0F1;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  padding: .85rem 1.70rem;
+  margin-right: 15px;
+  color: #2C3E50;
+  text-transform: uppercase;
+  font-size: 1.1rem; }
+  .button-default:hover {
+    cursor: pointer;
+    background-color: #cc483a;
+    border-color: #08436f;
+    color: #ffffff; }
+
+.button-blue {
+  background-color: #0E70B9;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  padding: .85rem 1.70rem;
+  margin-right: 15px;
+  color: #2C3E50;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #ffffff; }
+  .button-blue:hover {
+    cursor: pointer;
+    background-color: #cc483a;
+    border-color: #08436f;
+    color: #ffffff; }
+
+.button-orange {
+  background-color: #2C3E50;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  padding: .85rem 1.70rem;
+  margin-right: 15px;
+  color: #2C3E50;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #ffffff; }
+  .button-orange:hover {
+    cursor: pointer;
+    background-color: #cc483a;
+    border-color: #08436f;
+    color: #ffffff; }
+
+form ol {
+  list-style: none;
+  -webkit-padding-start: 0; }
+form label {
+  display: block;
+  line-height: 2rem; }
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #999999;
+  width: 300px; }
+form input:focus,
+form textarea:focus {
+  border: 1px solid #0E70B9;
+  background: #ECF0F1; }
+
+li {
+  text-transform: uppercase; }
+
+#box {
+  width: 100%;
+  padding-bottom: 25%;
+  border: 5px solid #0E70B9;
+  background: #B5E9F7; }
+
+.inner-contents {
+  padding: 15px;
+  text-align: center;
+  font-size: 2rem; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333333; }
+
+#container {
+  width: 800px;
+  margin: 40px auto;
+  background: #fff; }
+
+h1 {
+  font-size: 3rem;
+  font-family: #333333;
+  font-weight: 300;
+  color: #E74C3C;
+  margin-top: 60px;
+  border-bottom: 1px dotted #E74C3C;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  font-weight: bold;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline;
+    color: #333333; }
+  body.firefox a {
+    font-weight: normal; }
+
+#top-container {
+  background: #ECF0F1;
+  padding: 20px; }
+  #top-container li {
+    list-style: none;
+    line-height: 2rem;
+    border-bottom: 1px dotted #fff;
+    font-weight: 300;
+    font-size: 1.6rem; }
+
+.font-size-one {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #0E70B9; }
+
+.colorbox, #colorbox-one, #colorbox-two, #colorbox-three, #colorbox-four, #colorbox-five {
+  width: 17%;
+  height: 150px;
+  display: inline-block;
+  padding: 10px; }
+
+#colorbox-one {
+  background: #E74C3C; }
+
+#colorbox-two {
+  background: #ECF0F1; }
+
+#colorbox-three {
+  background: #B5E9F7; }
+
+#colorbox-four {
+  background: #0E70B9; }
+
+#colorbox-five {
+  background: #2C3E50; }
+
+.fa, .icons-group {
+  color: #0E70B9;
+  padding-right: 20px; }
+
+.fa, .social-icons {
+  color: #333333;
+  padding-right: 10px; }
+
+/*# sourceMappingURL=main.css.map */

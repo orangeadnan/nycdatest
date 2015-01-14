@@ -1,0 +1,59 @@
+/* This is a CSS comment*/
+nav {
+  background: rgba(234, 23, 11, 0.5); }
+  nav ul {
+    list-style-type: none; }
+  nav a {
+    color: #CCCCCC;
+    text-decoration: none; }
+    nav a:hover {
+      color: rgba(234, 23, 11, 0.5); }
+    nav a.special {
+      color: red; }
+
+@media all and (min-width: 768px) {
+  nav li {
+    display: inline-block;
+    margin: 10px; } }
+body {
+  background: #0E0EAA; }
+
+.test {
+  background: white;
+  color: #CCCCCC; }
+
+.square {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.bigsquare {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  background: rgba(234, 23, 11, 0.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3); }
+
+@media all and (min-width: 768px) {
+  .square, .bigsquare {
+    display: inline-block; } }
+.button, .special-button {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 3px;
+  background-color: red; }
+
+.special-button {
+  background-color: yellow; }
+
+/*# sourceMappingURL=main.css.map */

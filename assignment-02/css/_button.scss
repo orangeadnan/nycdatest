@@ -1,0 +1,30 @@
+@mixin button($color-three) {
+	background-color: $color-three;
+	border: 1px solid mix($color-one, $color-one, 100%);
+	border-radius: 3px;
+	padding: .85rem 1.70rem;
+	margin-right: 15px;
+	color: $color-six;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	
+	&:hover {
+		cursor: pointer;
+		background-color: mix($color-one, $color-five, 15%);
+		border-color: mix(black, $color-two, 40%);
+		color: $color-seven;
+	}
+}
+
+.button-default {
+	@include button($color-three);
+}
+.button-blue {
+	@include button($color-two);
+	color: $color-seven;
+}
+.button-orange {
+	@include button($color-six);
+	color: $color-seven;
+}
+
